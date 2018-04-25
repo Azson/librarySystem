@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>BookSystem</display-name>
+  
+  <!-- 字符编码过滤 -->
+  <filter>
+  	<filter-name>EncodingFilter</filter-name>
+  	<filter-class>com.shawn.book.filter.EncodingFilter</filter-class>
+  </filter>
+  
+  <filter-mapping>
+  	<filter-name>EncodingFilter</filter-name>
+  	<url-pattern>/*</url-pattern>
+  </filter-mapping>
+  
+  <!-- 登陆过滤 -->
+  <filter>
+  	<filter-name>AdminLoginFilter</filter-name>
+  	<filter-class>com.shawn.book.filter.AdminLoginFilter</filter-class>
+  </filter>
+  
+  <filter-mapping>
+  	<filter-name>AdminLoginFilter</filter-name>
+  	<url-pattern>/pages/back/*</url-pattern><!-- 拦截所有访问后台的页面 -->
+  </filter-mapping>
+  
+  <servlet>
+  	<servlet-name>AdminServlet</servlet-name>
+  	<servlet-class>com.shawn.book.servlet.AdminServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>AdminServlet</servlet-name>
+  	<url-pattern>/pages/back/AdminServlet/*</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>MemberServlet</servlet-name>
+  	<servlet-class>com.shawn.book.servlet.MemberServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>MemberServlet</servlet-name>
+  	<url-pattern>/pages/back/member/MemberServlet/*</url-pattern>
+  </servlet-mapping>
+    
+  <servlet>
+  	<servlet-name>ItemServlet</servlet-name>
+  	<servlet-class>com.shawn.book.servlet.ItemServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>ItemServlet</servlet-name>
+  	<url-pattern>/pages/back/item/ItemServlet/*</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>BookServlet</servlet-name>
+  	<servlet-class>com.shawn.book.servlet.BookServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>BookServlet</servlet-name>
+  	<url-pattern>/pages/back/book/BookServlet/*</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>LenBookServlet</servlet-name>
+  	<servlet-class>com.shawn.book.servlet.LenBookServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>LenBookServlet</servlet-name>
+  	<url-pattern>/pages/back/lenbook/LenBookServlet/*</url-pattern>
+  </servlet-mapping>
+  
+  <!-- 配置JSTL -->
+  <jsp-config>
+  	<taglib>
+  		<taglib-uri>http://www.shawn.com/jstl/core</taglib-uri>
+  		<taglib-location>/WEB-INF/c.tld</taglib-location>
+  	</taglib>
+  	<taglib>
+  		<taglib-uri>http://www.shawn.com/jstl/fmt</taglib-uri>
+  		<taglib-location>/WEB-INF/fmt.tld</taglib-location>
+  	</taglib>
+  	<taglib>
+  		<taglib-uri>http://www.shawn.com/jstl/fn</taglib-uri>
+  		<taglib-location>/WEB-INF/fn.tld</taglib-location>
+  	</taglib>
+  </jsp-config>
+  
+  <welcome-file-list>
+    <welcome-file>login.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
