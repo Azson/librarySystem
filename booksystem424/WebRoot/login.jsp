@@ -11,7 +11,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Shawn图书管理系统</title>
+    <title>别人家的图书管理系统</title>
     <link href="assets/css/bootstrap.css" rel="stylesheet" />
     <link href="assets/css/font-awesome.css" rel="stylesheet" />
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
@@ -26,7 +26,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     <div class="container">
         <div class="row text-center " style="padding-top:100px;">
             <div class="col-md-12">
-                <h2>Shawn图书管理系统</h2>
+                <h2>别人家的图书管理系统</h2>
             </div>
         </div>
          <div class="row ">
@@ -50,7 +50,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                                      <!-- <a href="index.html" class="btn btn-primary col-md-offset-7">Login Now</a> -->
                                      <input type="submit" value="登 录" class="btn btn-primary col-md-offset-5"/>
                                     <hr />
-                                    忘记密码 ? <a href="#" >点击这里 </a> 或者联系QQ： <a href="#">111222333</a>
+                                    忘记密码 ? <a href="https://www.baidu.com" >点击这里，你就知道 </a> 或者联系QQ： <a href="#">1234567</a>
                                     </form>
                             </div>
                            

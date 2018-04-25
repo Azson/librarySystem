@@ -13,7 +13,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Shawn图书管理系统</title>
+    <title>别人家的图书管理系统</title>
     <link href="assets/css/bootstrap.css" rel="stylesheet" />
     <link href="assets/css/font-awesome.css" rel="stylesheet" />
     <link href="assets/css/basic.css" rel="stylesheet" />
@@ -27,7 +27,11 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
         <!-- 此处编写内容  -->
         <div id="page-wrapper">
             <div id="page-inner">
-				<h2>Hello World!</h2>			
+				<h2>Hello World!</h2>	
+				<pre>
+					本文代码已上传github,<a href='https://github.com/Azson/librarySystem' target='blank'>直通车</a>
+					也可以直接git git@github.com:Azson/librarySystem.git
+				</pre>		
             </div>
         </div>
     </div>

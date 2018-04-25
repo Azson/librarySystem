@@ -8,7 +8,7 @@ public class DatabaseConnection {
 	
 	public static final String DBDRIVER = "com.mysql.jdbc.Driver";
 	
-	public static final String DBURL = "jdbc:mysql://localhost:3306/booksystem";
+	public static final String DBURL = "jdbc:mysql://localhost:3306/booksystem?useUnicode=true&characterEncoding=UTF-8";
 	
 	public static final String DBUSER = "root";
 	

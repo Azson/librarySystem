@@ -4,12 +4,12 @@
 <nav class="navbar navbar-default navbar-cls-top " role="navigation" style="margin-bottom: 0">
     <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
-            <span class="sr-only">Shawn图书管理系统</span>
+            <span class="sr-only">别人家的图书管理系统</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="pages/back/index.jsp">Shawn图书管理系统</a>
+        <a class="navbar-brand" href="pages/back/index.jsp">别人家的图书管理系统</a>
     </div>
     <!--顶部-->
     <div class="header-right">

@@ -57,6 +57,9 @@ public class ItemServlet extends HttpServlet{
 			Item vo = new Item();
 			vo.setName(name);
 			vo.setNote(note);
+			//System.out.println(vo.getName());
+			
+			//System.out.println(vo.getNote());
 			try {
 				if(ServiceFactory.getIItemServiceInstance().insert(vo)){
 					msg = "数据增加成功！";
