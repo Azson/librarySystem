@@ -40,11 +40,11 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                                        <br />
                                      <div class="form-group input-group">
                                             <span class="input-group-addon"><i class="fa fa-user"  ></i></span>
-                                            <input type="text" id="aid" name="aid" value="admin" class="form-control" placeholder="Your Username " />
+                                            <input type="text" id="aid" name="aid" value="" class="form-control" placeholder="Your Username " />
                                         </div>
                                                                               <div class="form-group input-group">
                                             <span class="input-group-addon"><i class="fa fa-lock"  ></i></span>
-                                            <input type="password" id="password" name="password" value="admin123" class="form-control"  placeholder="Your Password" />
+                                            <input type="password" id="password" name="password" value="" class="form-control"  placeholder="Your Password" />
                                         </div>
 
                                      <!-- <a href="index.html" class="btn btn-primary col-md-offset-7">Login Now</a> -->
